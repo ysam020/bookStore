@@ -1,0 +1,99 @@
+.landing-banner {
+  background-image: url("../assets/bg.jpg");
+  height: 70vh;
+}
+
+.banner-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.landing-banner h1 {
+  font-size: 56px;
+  text-align: center;
+}
+
+.landing-banner a {
+  background-color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.landing-banner a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Book cards */
+.landing-books {
+  background-image: url("../assets/bg-2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 80px 0;
+}
+
+.landing-books h2 {
+  border-bottom: 4px solid #c69090;
+}
+
+.books-col {
+  margin-top: 30px !important;
+}
+
+.book-info h5 {
+  margin-top: 10px;
+  color: #c69090;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.front {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+  min-height: 450px;
+}
+
+.back {
+  position: absolute;
+  bottom: -280px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px 30px 0 0;
+}
+
+.front:hover .back {
+  bottom: 0px;
+}
+
+.back h5 {
+  margin-bottom: 20px;
+}
+
+.back input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #c69090;
+  outline: none;
+}
+
+.back button {
+  float: right;
+  margin-bottom: 10px;
+}
