@@ -8,7 +8,7 @@ function useFetch() {
   useEffect(() => {
     async function getBooks() {
       setLoading(true);
-      const res = await axios.get("http://localhost:9002/books");
+      const res = await axios.get("https://bookstore-0mxa.onrender.com/books");
       setData(res.data);
       setLoading(false);
     }

@@ -13,7 +13,10 @@ export async function addBook(values, file, data, setData, handleClose) {
     isbn,
   };
 
-  const res = await axios.post("http://localhost:9002/books", bookData);
+  const res = await axios.post(
+    "https://bookstore-0mxa.onrender.com/books",
+    bookData
+  );
   setData([...data, bookData]);
   handleClose();
   return res.data;

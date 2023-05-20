@@ -13,7 +13,7 @@ export const handleUpdateBook = async (setData, editedBookData, book) => {
 
   try {
     const response = await axios.put(
-      `http://localhost:9002/books/${book.id}`,
+      `https://bookstore-0mxa.onrender.com/books/${book.id}`,
       data
     );
 
